@@ -1,0 +1,50 @@
+@import "main";
+
+.Home {
+  background: linear-gradient(
+    $color-background-gray,
+    darken($color-background-gray, 20%)
+  );
+  height: 100%;
+  font-size: $font-size-regular;
+
+  &__Slider {
+    position: fixed;
+    top: 50%;
+    right: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    opacity: 50%;
+    z-index: 3;
+
+    &Circle {
+      background-color: $color-white;
+      border-radius: 20px;
+      width: 1rem;
+      height: 1rem;
+
+      &.Active {
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: $color-red;
+      }
+    }
+  }
+
+  &__Header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .Home {
+    &__Header {
+      display: none;
+    }
+  }
+}

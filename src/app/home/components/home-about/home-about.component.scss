@@ -1,0 +1,20 @@
+@import "main";
+
+.HomeAbout {
+  background-color: lighten($color-background-gray, 10%);
+  max-width: 100%;
+  margin: auto;
+  padding: 15rem 15%;
+  &__Title {
+    text-align: center;
+    font-size: $font-size-heading;
+    color: $color-font-red;
+  }
+
+  &__Description {
+    font-size: 20px;
+    color: $color-font-white;
+    text-align: center;
+    margin-top: 5rem;
+  }
+}

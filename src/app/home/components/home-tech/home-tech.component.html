@@ -1,0 +1,9 @@
+<div class="HomeTech">
+  <div class="HomeTech__Title">{{ stringTranslation.technologies }}</div>
+  <div class="HomeTech__Content">
+    <div *ngFor="let item of items" class="HomeTech__Item">
+      <fa-icon [icon]="item.icon"></fa-icon>
+      <div class="HomeTech__ItemLabel">{{ item.name }}</div>
+    </div>
+  </div>
+</div>
