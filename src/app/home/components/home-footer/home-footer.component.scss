@@ -22,4 +22,10 @@
     color: $color-font-white;
     font-size: $font-size-lg;
   }
+
+  &__Link {
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }

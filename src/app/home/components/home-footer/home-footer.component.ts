@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { stringTranslation } from '../../../../assets/string';
+import { socLinks } from '../../../app.component';
 
 @Component({
   selector: 'home-footer',
@@ -8,10 +9,11 @@ import { stringTranslation } from '../../../../assets/string';
   styleUrl: './home-footer.component.scss',
 })
 export class HomeFooterComponent {
-  icons = {
-    github: faGithub,
-    linkedin: faLinkedin,
-  };
+  links = socLinks
 
   stringTranslation = stringTranslation;
+
+  openLink(link: string) {
+    window.open(link, '_blank');
+  }
 }

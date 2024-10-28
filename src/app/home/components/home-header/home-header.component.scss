@@ -17,7 +17,16 @@
     border-bottom: 2px solid $color-font-red;
   }
 
-  &__Buttons {
+  &__Button {
+    color: $color-font-red;
+    text-decoration: none;
+    font-weight: 500;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__Buttons {  
     margin-left: auto;
     display: flex;
     flex-direction: row;

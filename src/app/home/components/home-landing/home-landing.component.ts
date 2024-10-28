@@ -1,13 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { ParticlesJsConfig } from '../../../../assets/paticlejs.config';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import {
   faCode,
-  faEnvelope,
-  faFile,
-  faMessage,
 } from '@fortawesome/free-solid-svg-icons';
 import { stringTranslation } from '../../../../assets/string';
+import { socLinks } from '../../../app.component';
 
 declare let particlesJS: any;
 
@@ -19,28 +16,7 @@ declare let particlesJS: any;
 export class HomeLandingComponent implements OnInit {
   faCode = faCode;
 
-  links = [
-    {
-      name: 'Github',
-      icon: faGithub,
-      url: 'https://github.com/Ivan9987Fajardo',
-    },
-    {
-      name: 'LinkedIn',
-      icon: faLinkedin,
-      url: 'https://www.linkedin.com/in/john-ivan-fajardo-803955188/',
-    },
-    {
-      name: 'Email',
-      icon: faEnvelope,
-      url: 'mailto:john.fajardo@pyrotech.website',
-    },
-    {
-      name: 'Resume',
-      icon: faFile,
-      url: 'assets/resume.pdf',
-    },
-  ];
+  links = socLinks
 
   stringTranslation = stringTranslation;
 
