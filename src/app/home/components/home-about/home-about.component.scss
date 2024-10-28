@@ -52,12 +52,18 @@
 
 @media only screen and (max-width: 1100px) {
   .HomeAbout {
+    padding: 15% 15%;
     &__Image {
       display: none;
     }
 
     &__Title {
       width: 100%;
+    }
+
+    &__Description {
+      margin: 0;
+      font-size: 16px;
     }
   }
 }
